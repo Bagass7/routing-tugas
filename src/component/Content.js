@@ -108,7 +108,10 @@ class Content extends React.Component {
 				return (
 					<div key={el.id}>
 						<h4>{el.title}</h4>
-						<p className='grey-text'>Author : {el.author}</p>
+						<div style={{display: 'flex', width: '100%'}}>
+							<p className='grey-text' style={{width: '20%'}}>Author : {el.author}</p>
+							<p className='grey-text' style={{width: '50%'}}>Publish Date : {el.pubDate}</p>
+						</div>
 						<img src={el.thumbnail} style={{minWidth: '75%', display: 'flex', margin: '0 auto'}} />
 					</div>
 				)
